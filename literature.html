@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Literature | R编程与心理统计</title>
+  <meta name="description" content="本书是一本关于如何使用R语言进行心理学数据分析的工具书，适合作为本科生、研究生学习R语言进行统计分析的教材，以及心理学的研究者作为数据分析参考书。" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Literature | R编程与心理统计" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="本书是一本关于如何使用R语言进行心理学数据分析的工具书，适合作为本科生、研究生学习R语言进行统计分析的教材，以及心理学的研究者作为数据分析参考书。" />
+  <meta name="github-repo" content="rstudio/rpaps" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Literature | R编程与心理统计" />
+  
+  <meta name="twitter:description" content="本书是一本关于如何使用R语言进行心理学数据分析的工具书，适合作为本科生、研究生学习R语言进行统计分析的教材，以及心理学的研究者作为数据分析参考书。" />
+  
+
+<meta name="author" content="史更虎" />
+
+
+<meta name="date" content="2022-09-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="r的数据类型和相关计算.html"/>
+<link rel="next" href="methods.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">R编程与心理统计</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#r编程环境的搭建" id="toc-r编程环境的搭建"><span class="toc-section-number">1</span> R编程环境的搭建</a>
+<ul>
+<li><a href="index.html#r是啥" id="toc-r是啥"><span class="toc-section-number">1.1</span> R是啥？</a></li>
+<li><a href="index.html#r编程环境r语言在哪儿写程序" id="toc-r编程环境r语言在哪儿写程序"><span class="toc-section-number">1.2</span> R编程环境：R语言在哪儿写程序？</a>
+<ul>
+<li><a href="index.html#第一步先装上r" id="toc-第一步先装上r"><span class="toc-section-number">1.2.1</span> 第一步：先装上R</a></li>
+<li><a href="index.html#rgui都可以干啥" id="toc-rgui都可以干啥"><span class="toc-section-number">1.2.2</span> RGUI都可以干啥？</a></li>
+<li><a href="index.html#更好的选择rstudio" id="toc-更好的选择rstudio"><span class="toc-section-number">1.2.3</span> 更好的选择：RStudio</a></li>
+<li><a href="index.html#还有其他的r的开发环境吗" id="toc-还有其他的r的开发环境吗"><span class="toc-section-number">1.2.4</span> 还有其他的R的开发环境吗？</a></li>
+</ul></li>
+</ul></li>
+<li><a href="r的数据类型和相关计算.html#r的数据类型和相关计算" id="toc-r的数据类型和相关计算"><span class="toc-section-number">2</span> R的数据类型和相关计算</a>
+<ul>
+<li><a href="r的数据类型和相关计算.html#基本数据类型" id="toc-基本数据类型"><span class="toc-section-number">2.1</span> 基本数据类型</a></li>
+<li><a href="r的数据类型和相关计算.html#变量variables" id="toc-变量variables"><span class="toc-section-number">2.2</span> 变量（Variables）</a>
+<ul>
+<li><a href="r的数据类型和相关计算.html#变量的赋值" id="toc-变量的赋值"><span class="toc-section-number">2.2.1</span> 变量的赋值</a></li>
+<li><a href="r的数据类型和相关计算.html#变量命名如何给变量取名字" id="toc-变量命名如何给变量取名字"><span class="toc-section-number">2.2.2</span> 变量命名：如何给变量取名字</a></li>
+</ul></li>
+<li><a href="r的数据类型和相关计算.html#算术运算" id="toc-算术运算"><span class="toc-section-number">2.3</span> 算术运算</a>
+<ul>
+<li><a href="r的数据类型和相关计算.html#变量在算术运算中的使用" id="toc-变量在算术运算中的使用"><span class="toc-section-number">2.3.1</span> 变量在算术运算中的使用</a></li>
+</ul></li>
+<li><a href="r的数据类型和相关计算.html#逻辑表达式和逻辑运算" id="toc-逻辑表达式和逻辑运算"><span class="toc-section-number">2.4</span> 逻辑表达式和逻辑运算</a>
+<ul>
+<li><a href="r的数据类型和相关计算.html#逻辑表达式的应用" id="toc-逻辑表达式的应用"><span class="toc-section-number">2.4.1</span> 逻辑表达式的应用</a></li>
+<li><a href="r的数据类型和相关计算.html#和" id="toc-和"><span class="toc-section-number">2.4.2</span> &amp;&amp;和||</a></li>
+</ul></li>
+<li><a href="r的数据类型和相关计算.html#向量vector" id="toc-向量vector"><span class="toc-section-number">2.5</span> 向量（Vector）</a>
+<ul>
+<li><a href="r的数据类型和相关计算.html#向量是什么" id="toc-向量是什么"><span class="toc-section-number">2.5.1</span> 向量是什么？</a></li>
+<li><a href="r的数据类型和相关计算.html#r的向量" id="toc-r的向量"><span class="toc-section-number">2.5.2</span> R的向量</a></li>
+<li><a href="r的数据类型和相关计算.html#通过下标访问向量中的元素" id="toc-通过下标访问向量中的元素"><span class="toc-section-number">2.5.3</span> 通过下标访问向量中的元素</a></li>
+<li><a href="r的数据类型和相关计算.html#向量的运算" id="toc-向量的运算"><span class="toc-section-number">2.5.4</span> 向量的运算</a></li>
+<li><a href="r的数据类型和相关计算.html#向量函数function" id="toc-向量函数function"><span class="toc-section-number">2.5.5</span> 向量函数（function）</a></li>
+</ul></li>
+<li><a href="r的数据类型和相关计算.html#数组与矩阵" id="toc-数组与矩阵"><span class="toc-section-number">2.6</span> 数组与矩阵</a>
+<ul>
+<li><a href="r的数据类型和相关计算.html#数组array" id="toc-数组array"><span class="toc-section-number">2.6.1</span> 数组（array）</a></li>
+<li><a href="r的数据类型和相关计算.html#矩阵matrix" id="toc-矩阵matrix"><span class="toc-section-number">2.6.2</span> 矩阵(Matrix)</a></li>
+<li><a href="r的数据类型和相关计算.html#矩阵运算" id="toc-矩阵运算"><span class="toc-section-number">2.6.3</span> 矩阵运算</a></li>
+<li><a href="r的数据类型和相关计算.html#矩阵函数" id="toc-矩阵函数"><span class="toc-section-number">2.6.4</span> 矩阵函数</a></li>
+</ul></li>
+</ul></li>
+<li><a href="literature.html#literature" id="toc-literature"><span class="toc-section-number">3</span> Literature</a></li>
+<li><a href="methods.html#methods" id="toc-methods"><span class="toc-section-number">4</span> Methods</a>
+<ul>
+<li><a href="methods.html#math-example" id="toc-math-example"><span class="toc-section-number">4.1</span> math example</a></li>
+</ul></li>
+<li><a href="applications.html#applications" id="toc-applications"><span class="toc-section-number">5</span> Applications</a>
+<ul>
+<li><a href="applications.html#example-one" id="toc-example-one"><span class="toc-section-number">5.1</span> Example one</a></li>
+<li><a href="applications.html#example-two" id="toc-example-two"><span class="toc-section-number">5.2</span> Example two</a></li>
+</ul></li>
+<li><a href="final-words.html#final-words" id="toc-final-words"><span class="toc-section-number">6</span> Final Words</a></li>
+<li><a href="references.html#references" id="toc-references">References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R编程与心理统计</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="literature" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Literature</h1>
+<p>Here is a review of existing methods.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="r的数据类型和相关计算.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-datavisulization.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
